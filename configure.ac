@@ -511,7 +511,7 @@ AC_MSG_CHECKING([whether to install manpages])
 AC_MSG_RESULT([$czmq_install_man])
 
 # Set some default features required by libczmq code.
-CPPFLAGS="-DCZMQ_INTERNAL_BUILD -D_REENTRANT -D_THREAD_SAFE $CPPFLAGS"
+CPPFLAGS="-DCZMQ_INTERNAL_BUILD -D_REENTRANT -D_THREAD_SAFE -Werror $CPPFLAGS"
 
 # OS-specific tests
 case "${host_os}" in
